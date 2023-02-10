@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da89ede8.css",
+    "main.js": "/static/js/main.c114e75d.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/hero.png": "/static/media/hero.29f0df2c9659dee7511e.png",
+    "static/media/daisyShop.png": "/static/media/daisyShop.d37cceced924f08e7cfd.png",
+    "static/media/lightOfAngels.png": "/static/media/lightOfAngels.3acda43e9a883f5ee361.png",
+    "static/media/Satoshi-Medium.otf": "/static/media/Satoshi-Medium.e9d34f0493a853cf10c1.otf",
+    "static/media/Satoshi-Bold.otf": "/static/media/Satoshi-Bold.b5dd7deee13e32689234.otf",
+    "static/media/tellab.png": "/static/media/tellab.8d358180161fd5d99df6.png",
+    "static/media/petRoom.png": "/static/media/petRoom.965679a858f595e8fbcb.png",
+    "static/media/kobbe.png": "/static/media/kobbe.7abe2ffef297a8a4dd93.png",
+    "static/media/logo.png": "/static/media/logo.8984d6934ead8eea22b6.png",
+    "static/media/github-black.svg": "/static/media/github-black.977dd227a6975ebb92e012f230462c97.svg",
+    "static/media/instagram-black.svg": "/static/media/instagram-black.df8e36cf5eb2b43615e7c196c3dead14.svg",
+    "static/media/linkedin-black.svg": "/static/media/linkedin-black.2e0ca3fda982304bc896bbbc6b7e4b75.svg",
+    "static/media/youtube-black.svg": "/static/media/youtube-black.78dada098680b3a7650c3c156d65a883.svg",
+    "index.html": "/index.html",
+    "main.da89ede8.css.map": "/static/css/main.da89ede8.css.map",
+    "main.c114e75d.js.map": "/static/js/main.c114e75d.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da89ede8.css",
+    "static/js/main.c114e75d.js"
+  ]
+}
