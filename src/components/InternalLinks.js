@@ -1,5 +1,6 @@
 // Component
 import Links from "./Links";
+import CV from '../assets/GabrielaManciniCV.pdf';
 
 const InternalLinks = ({className}) => {
     const internalLinks = [
@@ -37,7 +38,7 @@ const InternalLinks = ({className}) => {
         {
             id:6,
             text: 'Resume',
-            href: '#resume',
+            href: CV,
             download: true
         }
     ]
