@@ -83,7 +83,6 @@ html {
         border-radius: 10px;
         display: flex;
         flex-direction: column;
-        height: 100vh;
         justify-content: flex-start;
         padding: 20px;
         position: absolute;
