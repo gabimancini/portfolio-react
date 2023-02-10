@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply max-w-7xl mx-auto px-4 md:px-10 py-8 md:py-14;
+    }
+
+    .btn-primary {
+        @apply bg-violet self-center md:self-start rounded-3xl text-white px-8 py-4;
+    }
+
+    .social-icons {
+        @apply w-6 h-6 mr-2;
+    }
+
+    .form-inputs,
+    textarea {
+        @apply w-full border-b border-solid border-darkViolet;
+    }
+
+    .error-message {
+        @apply border-t-0 border-red-400 rounded-b bg-red-100 px-3 py-2 text-red-700 text-xs mb-3;
+    }
+
+    .service-cards {
+        @apply p-10 grid gap-2 rounded-cards shadow-cards bg-white mb-10;
+    }
+
+    .confirmation-check {
+        @apply inline-flex items-center px-4 py-2 text-white bg-indigo-600 border border-indigo-600 rounded rounded-full hover:bg-indigo-700 focus:outline-none focus:ring;
+    }
+
+    .firstWordTitle {
+        @apply border-b-4 border-solid border-black;
+    }
+}
+
+@font-face {
+    font-family: "Satoshi-medium";
+    src: url("../src/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
+}
+
+@font-face {
+    font-family: "Satoshi-bold";
+    src: url("../src/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation styles to mobile version */
+.navigation-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation-menu {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .navigation-menu {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navigation-menu {
+        align-items: flex-start;
+        background-color: #F1F7FF;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: flex-start;
+        padding: 20px;
+        position: absolute;
+        top: 80px;
+        transform: translateX(-100vh);
+        transition: all .5s linear;
+        width: 80%;
+    }
+
+    .navigation-menu.expanded {
+        transform: translateX(0)
+    }
+
+    .navigation-menu div,
+    .navigation-menu div ul {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin: unset;
+    }
+
+    .navigation-menu a {
+        display: inline-block;
+        text-align: left;
+        padding: 20px 10px;
+    }
+}
+
+/* Progress bar customization */
+progress {
+    border-radius: 10px;
+    height: 19px;
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-bar {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #7D61A3;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-value {
+    background-color: #7D61A3;
+    border-radius: 10px;
+}
+
+/* Form elements */
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+.form-group input+#errorMessage,
+textarea+#errorMessage {
+    display: none;
+}
+
+.form-group input:invalid[focused='true'],
+textarea:invalid[focused='true'] {
+    border: 1px solid red;
+}
+
+.form-group input:invalid[focused='true']+#errorMessage,
+textarea:invalid[focused='true']+#errorMessage {
+    display: block;
+}
+
+/* Title first word */
+.text-h2.text-h2::first-word {
+    margin-bottom: 10px;
+    border-bottom: 4px solid #14142B;
+}
