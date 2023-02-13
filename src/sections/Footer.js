@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
                 <div className='md:mx-auto'>
                     <h3 className='text-h3 mb-8'>Pages</h3>
-                    <InternalLinks className='grid grid-cols-1 leading-10' />
+                    <InternalLinks className='grid grid-cols-1 leading-10 pb-2' />
                     <ExternalLinks />
                 </div>
                 <div className='md:mx-auto'>
