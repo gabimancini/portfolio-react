@@ -23,6 +23,9 @@ const Footer = () => {
                     <a href='mailto:gabimancinir@gmail.com'>gabimancinir@gmail.com</a>
                 </div>
             </div>
+            <div className="flex justify-center bg-white p3 text-black">
+                <p className='pr-5'>Designed by - Alejandro Ritta </p><p className='pl-5'>Developed by - Gabriela Mancini</p>
+            </div>
         </footer>
     )
 }
