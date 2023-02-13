@@ -36,7 +36,7 @@ const Services = () => {
     return (
         <section id="services" className='container text-center'>
             <SectionTitles firstWordTitle={firstWordTitle} title={title} description={description} />
-            <div className='md:columns-2 gap-12 relative md:pt-10 md:pb-10 '>
+            <div className='md:columns-2 gap-14 md:gap-12 relative md:pt-10 md:pb-10'>
                 {
                     Services.map(card => (
                         <CardServices key={card.title} description={card.description} title={card.title} icon={card.icon} />

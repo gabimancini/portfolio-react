@@ -26,7 +26,7 @@ const Header = () => {
                     <InternalLinks className="flex "/>
                     <ExternalLinks />
                 </div>
-                <IconLinks className='social-icons' />
+                <IconLinks className='w-6 mr-2' />
             </nav> 
         </header>
     )

@@ -11,10 +11,6 @@
         @apply bg-violet self-center md:self-start rounded-3xl text-white px-8 py-4;
     }
 
-    .social-icons {
-        @apply w-6 h-6 mr-2;
-    }
-
     .form-inputs,
     textarea {
         @apply w-full border-b border-solid border-darkViolet;
@@ -117,8 +113,10 @@ progress {
     height: 19px;
     width: 100%;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    background: #D9D9D9; /* Needed for firefox */
+    -webkit-appearance: none; /* Needed for WebKit/Blink */
 }
-
+ 
 progress::-webkit-progress-bar {
     background-color: #D9D9D9;
     border-radius: 10px;
@@ -130,12 +128,7 @@ progress::-webkit-progress-value {
 }
 
 progress::-moz-progress-bar {
-    background-color: #D9D9D9;
-    border-radius: 10px;
-}
-
-progress::-moz-progress-bar {
-    background-color: #D9D9D9;
+    background-color:#7D61A3; /* Needed for Firefox */
     border-radius: 10px;
 }
 
@@ -143,6 +136,7 @@ progress::-moz-progress-value {
     background-color: #7D61A3;
     border-radius: 10px;
 }
+
 
 /* Form elements */
 textarea::placeholder {

@@ -17,8 +17,8 @@ const Footer = () => {
                     <ExternalLinks />
                 </div>
                 <div className='md:mx-auto'>
-                    <h3 className='text-h3 mb-4'>Follow Me</h3>
-                    <IconLinks className='social-icons invert' />
+                    <h3 className='text-h3'>Follow Me</h3>
+                    <IconLinks className='invert w-10 mr-6' />
                     <h3 className='text-h3 mt-6'>Contact Me</h3>
                     <a href='mailto:gabimancinir@gmail.com'>gabimancinir@gmail.com</a>
                 </div>

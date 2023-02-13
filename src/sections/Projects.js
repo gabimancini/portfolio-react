@@ -47,9 +47,9 @@ const Projects = () => {
     ]
     return (
         <section id="myProjects">
-            <div className="container text-center">
+            <div className="container text-center bg-projects-pattern  bg-no-repeat bg-projectsPosition">
                 <SectionTitles firstWordTitle={firstWordTitle} title={title} description={description} />
-                <div className="grid grid-cols-3 gap-6 items-center md:bg-projects-pattern  bg-no-repeat bg-projectsPosition">
+                <div className="grid grid-cols-3 gap-6 items-center">
                     {images.map(image => (
                         <ProjectsGallery key={image.alt} src={image.src} alt={image.alt} href={image.href} />
                     ))}
