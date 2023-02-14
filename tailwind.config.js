@@ -19,6 +19,7 @@ module.exports = {
       },
       colors: {
         darkGray: '#777990',
+        darkMagenta: '#DF1C56',
         darkViolet: '#14142B',
         footer: '#EBEBEB',
         lightGray: '#F1F7FF',
@@ -30,7 +31,7 @@ module.exports = {
         satoshiMedium: ['Satoshi-medium', 'sans-serif'],
       },
       fontSize: {
-        h1: '60px',
+        h1: '68px',
         h1Sm: '30px',
         h2: '40px',
         h3: '25px',
