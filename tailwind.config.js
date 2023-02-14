@@ -9,9 +9,8 @@ module.exports = {
         "projects-pattern": "url('assets/backgrounds/backGroundProjects.svg')"
       },
       backgroundPosition: {
-        heroPosition: 'center 120%',
         hero2Position: 'center 100%',
-        projectsPosition: 'center 55%'
+        projectsPosition: 'center 55%',
       },
       borderRadius: {
         cards: '48px'
