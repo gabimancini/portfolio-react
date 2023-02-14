@@ -4,6 +4,7 @@ import IconLinks from '../components/IconLinks';
 import ExternalLinks from '../components/ExternalLinks';
 
 const Footer = () => {
+    const isFooter = true;
     return (
         <footer className='bg-darkViolet text-footer'>
             <div className="container grid md:grid-cols-3 gap-10">
@@ -13,7 +14,7 @@ const Footer = () => {
                 </div>
                 <div className='md:mx-auto'>
                     <h3 className='text-h3 mb-8'>Pages</h3>
-                    <InternalLinks className='grid grid-cols-1 leading-10 pb-2' />
+                    <InternalLinks className='grid grid-cols-1 leading-10 pb-2' isFooter={isFooter} />
                     <ExternalLinks />
                 </div>
                 <div className='md:mx-auto'>
