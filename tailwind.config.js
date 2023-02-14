@@ -5,10 +5,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('assets/backgrounds/backGroundHero.png')",
+        'hero-pattern2': "url('assets/backgrounds/backGroundHero2.svg')",
         "projects-pattern": "url('assets/backgrounds/backGroundProjects.svg')"
       },
       backgroundPosition: {
         heroPosition: 'center 120%',
+        hero2Position: 'center 100%',
         projectsPosition: 'center 55%'
       },
       borderRadius: {
