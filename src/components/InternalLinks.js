@@ -2,7 +2,8 @@
 import Links from "./Links";
 import CV from '../assets/GabrielaManciniCV.pdf';
 
-const InternalLinks = ({className}) => {
+const InternalLinks = ({ className }) => {
+    const isFooter = true;
     const internalLinks = [
         {
             id: 1,
@@ -36,7 +37,7 @@ const InternalLinks = ({className}) => {
             download: false
         },
         {
-            id:6,
+            id: 6,
             text: 'Resume',
             href: CV,
             download: true
@@ -45,9 +46,11 @@ const InternalLinks = ({className}) => {
     return (
         <ul className={className}>
             {
+                isFooter &&
                 internalLinks.map((link) => (
                     <Links key={link.id} children={link.text} href={link.href} download={link.download} />
-                ))
+                )).splice(0, 3)
+
             }
         </ul>
     )
