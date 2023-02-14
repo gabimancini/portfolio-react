@@ -28,7 +28,9 @@ module.exports = {
         violet: '#3B225D',
       },
       fontFamily: {
+        satoshiBlack: ['Satoshi-black', 'sans-serif'],
         satoshiBold: ['Satoshi-bold', 'sans-serif'],
+        satoshiLight: ['Satoshi-light', 'sans-serif'],
         satoshiMedium: ['Satoshi-medium', 'sans-serif'],
       },
       fontSize: {
