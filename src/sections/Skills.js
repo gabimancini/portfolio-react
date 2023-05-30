@@ -36,7 +36,8 @@ const Skills = () => {
         }
     ]
     return (
-        <div>
+        <section id="skills">
+         <div className=" container">
             <SectionTitles firstWordTitle={firstWordTitle} title={title} />
             {
                 skills.map(skill => (
@@ -44,6 +45,7 @@ const Skills = () => {
                 ))
             }
         </div>
+        </section>
     )
 }
 

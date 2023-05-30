@@ -46,6 +46,7 @@ module.exports = {
       maxWidth: {
         heroImg: '418px',
         heroImgSm: '70%',
+        videoTitle: "275px"
       },
       width: {
         container: '1240px',

@@ -1,6 +1,6 @@
-const Links = ({ id, href, children, download, target }) => {
+const Links = ({ id, href, children, download, target,clickEvent }) => {
   return (
-    <li key={id}><a href={href} target={target} className='links' download={download} >{children}</a></li>
+    <li key={id}><a href={href} target={target} className='links' download={download} onClick={clickEvent} >{children}</a></li>
   )
 }
 export default Links;

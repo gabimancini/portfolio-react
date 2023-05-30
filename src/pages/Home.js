@@ -11,10 +11,8 @@ const Home = () => {
     return (
         <>
             <Hero />
-            <section id="about" className='container grid md:grid-cols-2 gap-20'>
-                <About />
-                <Skills />
-            </section>
+            <About />
+            <Skills />
             <Services />
             <Projects />
             <Quotes />

@@ -5,7 +5,8 @@ const About = () => {
     const firstWordTitle = 'About';
     const title = ' Me';
     return (
-        <div>
+        <section id="about">
+         <div className=" container">
             <SectionTitles title={title} firstWordTitle={firstWordTitle} />
             <div className="text-darkGray leading-8">
             <p>I find myself working on what I like the most: coding, teaching and writing.</p>
@@ -19,6 +20,7 @@ const About = () => {
                 Gabriela Mancini
             </p>
         </div>
+        </section>
     )
 }
 
