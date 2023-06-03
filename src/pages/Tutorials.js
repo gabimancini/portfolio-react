@@ -49,7 +49,7 @@ const Tutorials = () => {
         allowFullScreen: true,
     }
 
-    return <section className=''>
+    return <section>
         <div className="container flex flex-col md:flex-row  sm:items-center md:items-stretch">
             <div className="flex flex-col md:w-6/12 justify-between p-6 sm:items-center md:items-start ">
                 <h2 className='text-3xl'>Crea un modal a puro CSS. 😱</h2>
