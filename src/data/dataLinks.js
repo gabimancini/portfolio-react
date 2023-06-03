@@ -1,4 +1,3 @@
-import CV from '../assets/GabrielaManciniCV.pdf';
 export const internalLinks = [
     {
         id: 1,

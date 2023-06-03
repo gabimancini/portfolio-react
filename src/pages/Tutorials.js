@@ -66,7 +66,7 @@ const Tutorials = () => {
                 return (
                     <div className="flex flex-col justify-between my-4 border-b-4 border-amber-500 border-solid">
                         <h3 className="max-w-videoTitle pb-2 text-slate-400">{video.title}</h3>
-                        <iframe width={videos.width} height={videos.height} src={videos.src + video.id} frameborder={videos.frameBorder} allowFullScreen></iframe>
+                        <iframe width={videos.width} height={videos.height} src={videos.src + video.id} frameborder={videos.frameBorder} allowFullScreen title="Youtube video"></iframe>
                     </div>
                 )
             })}

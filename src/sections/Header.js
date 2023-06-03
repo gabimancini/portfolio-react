@@ -9,7 +9,6 @@ import Logo from '../assets/logo.png';
 
 const Header = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
-    const [isActive, setIsActive] = useState(false);
  
     return (
         <header className="mx-auto max-w-7xl flex justify-between items-center flex-wrap px-3 py-3 md:py-0">
