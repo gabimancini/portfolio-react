@@ -66,7 +66,7 @@ const Tutorials = () => {
 
             </div>
             <div className=' md:w-6/12 '>
-            <iframe className="border-b-8 border-amber-500 border-solid w-full h-full"   src="https://www.youtube.com/embed/M7oGJYKDV38" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe className="border-b-8 border-amber-500 border-solid h-52 w-full md:h-full" src="https://www.youtube.com/embed/M7oGJYKDV38" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
         </div>
         
