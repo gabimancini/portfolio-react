@@ -44,11 +44,9 @@ const Tutorials = () => {
         width: "275",
         height: "150",
         src: `https://www.youtube-nocookie.com/embed/`,
-        frameBorder: "0",
         allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
-        allowFullScreen: true,
+      
     }
-
     return <section>
         <div className="container flex flex-col md:flex-row  sm:items-center md:items-stretch">
             <div className="flex flex-col md:w-6/12 justify-between p-6 sm:items-center md:items-start ">
@@ -59,14 +57,14 @@ const Tutorials = () => {
                 <Button href="https://www.youtube.com/channel/UC5r4oV_i4-Ydta_OJkPq50g" children='Visit my Channel' className='btn-primary md:mx-auto lg:mx-0' target="_blank" />
 
             </div>
-            <iframe className="border-b-8 border-amber-500 border-solid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Iwy8o-hqJ-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className="border-b-8 border-amber-500 border-solid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Iwy8o-hqJ-c" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </div>
         <div className="container flex flex-wrap lg:flex-row gap-x-4 gap-y-5 sm:justify-center md:justify-between">
-            {videoID.map((video, key = { video }) => {
+            {videoID.map((video) => {
                 return (
-                    <div className="flex flex-col justify-between my-4 border-b-4 border-amber-500 border-solid">
+                    <div className="flex flex-col justify-between my-4 border-b-4 border-amber-500 border-solid" key = { video.id }>
                         <h3 className="max-w-videoTitle pb-2 text-slate-400">{video.title}</h3>
-                        <iframe width={videos.width} height={videos.height} src={videos.src + video.id} frameborder={videos.frameBorder} allowFullScreen title="Youtube video"></iframe>
+                        <iframe width={videos.width} height={videos.height} src={videos.src + video.id} frameBorder="0" allowFullScreen title="Youtube video"></iframe>
                     </div>
                 )
             })}
