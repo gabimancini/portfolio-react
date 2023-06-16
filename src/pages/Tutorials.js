@@ -3,8 +3,16 @@ import Button from '../components/Button';
 const Tutorials = () => {
     let videoID = [
         {
+            id: "Y982SlCaLpU",
+            title: "De qué theme sos?"
+        },
+        {
+            id: "Iwy8o-hqJ-c",
+            title: "Un modal a puro CSS?"
+        },
+        {
             id: "I3fY9nectuA",
-            title: "Anchor, Input o Button? Usemos correctamente."
+            title: "Anchor, Input o Button?."
         },
         {
             id: "lO69-EAKrtA",
@@ -16,28 +24,29 @@ const Tutorials = () => {
         },
         {
             id: "GRGfDsjlib0",
-            title: "Cómo Personalizar Radio y Checkbox CSS"
+            title: "Cómo Personalizar Radio y Checkbox."
         },
         {
             id: "sFNdJCJM-Wc",
-            title: "Cómo dominar la propiedad display CSS en menos de 10 minutos."
+            title: "Cómo dominar la propiedad display."
         },
         {
             id: "OYeRGkVy1bY",
-            title: "Seguís usando for() ? Conocé los métodos map(), filter() y reduce()."
+            title: "Seguís usando for()?"
         },
         {
             id: "w2IoGtXH39U",
-            title: "Sabés cómo usar useState (React Hook)?"
+            title: "Sabés cómo usar useState?"
         },
         {
             id: "JFSDdiXmFn8",
-            title: "Sabés cómo usar useEffect (React Hook)?"
+            title: "Sabés cómo usar useEffect?"
         },
         {
             id: "esRytpe43Rg",
-            title: "No los dejemos afuera. Reglas de accesibilidad."
+            title: "No los dejemos afuera."
         },
+      
     ]
 
     let videos = {
@@ -48,23 +57,25 @@ const Tutorials = () => {
       
     }
     return <section>
-        <div className="container flex flex-col md:flex-row  sm:items-center md:items-stretch">
-            <div className="flex flex-col md:w-6/12 justify-between p-6 sm:items-center md:items-start ">
-                <h2 className='text-3xl'>Crea un modal a puro CSS. 😱</h2>
-                <p className='text-center md:text-left'>Sabias que podemos hacer un modal a puro CSS? Sin recurrir a Javascript crearemos un modal con la funcionalidad de abrirlo y cerrarlo?  💪😁</p>
-                <p className='text-center md:text-left'>Una ventana modal o modal box es un recuadro que aparece sobre la página, con la particularidad de que bloquea todas las funciones.</p>
-                <p className='text-center md:text-left'>En este video aprenderás a hacerlo sin JavaScript.</p>
-                <Button href="https://www.youtube.com/channel/UC5r4oV_i4-Ydta_OJkPq50g" children='Visit my Channel' className='btn-primary md:mx-auto lg:mx-0' target="_blank" />
+        <div className="container flex flex-col md:flex-row sm:items-center md:items-stretch">
+            <div className="flex flex-col md:w-6/12 items-center md:justify-between p-6 sm:items-center md:items-start ">
+                <h2 className='text-3xl mb-6 '>HTML intensivo para principiantes</h2>
+                <p >Si estás entrando en el mundo del desarrollo web,  seguramente la palabra HTML te habrá aparecido en tus búsquedas.</p>
+                <p> En este video conocerás los conceptos básicos de HTML y será el puntapié para seguir explorando y profundizando sobre este lenguaje de maquetación.💪😁.</p>
+                <Button href="https://www.youtube.com/channel/UC5r4oV_i4-Ydta_OJkPq50g" children='Visit my Channel' className='btn-primary mt-6 md:mx-auto lg:mx-0' target="_blank" />
 
             </div>
-            <iframe className="border-b-8 border-amber-500 border-solid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Iwy8o-hqJ-c" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <div className=' md:w-6/12 '>
+            <iframe className="border-b-8 border-amber-500 border-solid w-full h-full"   src="https://www.youtube.com/embed/M7oGJYKDV38" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            </div>
         </div>
-        <div className="container flex flex-wrap lg:flex-row gap-x-4 gap-y-5 sm:justify-center md:justify-between">
+        
+        <div className="container flex flex-wrap lg:flex-row gap-x-5 gap-y-5  justify-center md:justify-start">
             {videoID.map((video) => {
                 return (
                     <div className="flex flex-col justify-between my-4 border-b-4 border-amber-500 border-solid" key = { video.id }>
-                        <h3 className="max-w-videoTitle pb-2 text-slate-400">{video.title}</h3>
                         <iframe width={videos.width} height={videos.height} src={videos.src + video.id} frameBorder="0" allowFullScreen title="Youtube video"></iframe>
+                        <h3 className="max-w-videoTitle py-2 text-xs">{video.title}</h3>
                     </div>
                 )
             })}
