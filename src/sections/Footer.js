@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex justify-center bg-white p3 text-black">
-                <p className='pr-5'>Designed by - Alejandro Ritta </p><p className='pl-5'>Developed by - Gabriela Mancini</p>
+                <p className='pr-5 text-xs'>Designed by - Alejandro Ritta </p><p className='pl-5 text-xs'>Developed by - Gabriela Mancini</p>
             </div>
         </footer>
     )
