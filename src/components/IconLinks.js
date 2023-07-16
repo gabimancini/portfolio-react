@@ -24,7 +24,7 @@ const IconLinks = ({className}) => {
             id: 13,
             src: YoutubeBlack,
             alt: 'Youtube',
-            href: 'https://www.youtube.com/@gabrielamancini'
+            href: 'https://www.youtube.com/@devmagister/'
         },
         {
             id: 14,
