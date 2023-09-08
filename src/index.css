@@ -32,8 +32,8 @@
         @apply inline-flex items-center px-4 py-2 text-white bg-indigo-600 border border-indigo-600 rounded rounded-full hover:bg-indigo-700 focus:outline-none focus:ring;
     }
 
-    .firstWordTitle {
-        @apply border-b-4 border-solid border-black;
+    .titleMagenta {
+        @apply text-darkMagenta;
     }
 }
 
@@ -57,6 +57,9 @@
     src: url("../src/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
 }
 
+*{
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -172,9 +175,4 @@ textarea:invalid[focused='true'] {
 textarea:invalid[focused='true']+#errorMessage {
     display: block;
 }
-
-/* Title first word */
-.text-h2.text-h2::first-word {
-    margin-bottom: 10px;
-    border-bottom: 4px solid #14142B;
-}
+ 

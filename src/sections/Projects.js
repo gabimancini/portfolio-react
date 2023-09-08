@@ -9,9 +9,10 @@ import AngelsProject from "../assets/porjects/lightOfAngels.png";
 import KobbeProject from "../assets/porjects/kobbe.png";
 import DaisyShopProject from "../assets/porjects/daisyShop.png";
 
-const Projects = () => {
-    const firstWordTitle = "My";
-    const title = " Projects";
+const Projects = ({title}) => {
+    let main = "Projects";
+    let secondary = "Some ";
+    title = <>{secondary}<span className="text-darkMagenta">{main}</span></>;
     const description = 'My portfolio showcases a diverse range of successful web projects.'
     const images = [
         {
@@ -48,7 +49,7 @@ const Projects = () => {
     return (
         <section id="myProjects">
             <div className="container text-center bg-projects-pattern  bg-no-repeat bg-projectsPosition">
-                <SectionTitles firstWordTitle={firstWordTitle} title={title} description={description} />
+                <SectionTitles title={title} description={description} />
                 <div className="grid grid-cols-3 gap-6 items-center">
                     {images.map(image => (
                         <ProjectsGallery key={image.alt} src={image.src} alt={image.alt} href={image.href} />

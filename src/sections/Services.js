@@ -7,10 +7,11 @@ import EcommerceService from '../assets/icons/serviceEcommerce.png';
 import Service from '../assets/icons/service.png';
 import DevelopmentService from '../assets/icons/serviceDevelopment.png';
 
-const Services = () => {
-
-    const firstWordTitle = 'My';
-    const title = ' Services';
+const Services = ({title
+}) => {
+    let main = "Services ";
+    let secondary = "My ";
+    title = <>{secondary}<span className="text-darkMagenta">{main}</span></>;
     const description = "Whether it's a custom website build or an e-commerce platform, I deliver tailored solutions to meet your unique needs."
     const Services = [{
         icon: ResponsiveService,
@@ -35,7 +36,7 @@ const Services = () => {
     ]
     return (
         <section id="services" className='container text-center'>
-            <SectionTitles firstWordTitle={firstWordTitle} title={title} description={description} />
+            <SectionTitles id="Services" title={title} description={description} />
             <div className='md:columns-2 gap-14 md:gap-12 relative md:pt-10 md:pb-10'>
                 {
                     Services.map(card => (

@@ -41,7 +41,7 @@ module.exports = {
         nav: '18px',
       },
       height: {
-        servicesBg: '100%',
+        servicesBg: '100%'
       },
       maxWidth: {
         heroImg: '418px',

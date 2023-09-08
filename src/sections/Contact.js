@@ -4,10 +4,11 @@ import { useNavigate } from 'react-router-dom';
 // Components
 import FormInputs from "../components/FormInputs";
 import SectionTitles from '../components/SectionTitles';
-const Contact = () => {
+const Contact = ({title}) => {
     const navigate = useNavigate();
-    const firstWordTitle = "Get"
-    const title = " in Touch";
+    let main = "Touch ";
+    let secondary = "Get in ";
+    title = <>{secondary}<span className="text-darkMagenta">{main}</span></>;
     const description = "Let's connect and discuss how I can bring your web vision to life.";
     const inputStyles = "rounded-t-md  px-3 py-2 text-gray-900";
     const [values, setValues] = useState({
@@ -55,7 +56,7 @@ const Contact = () => {
 
     return (
         <section id="contactMe" className="container text-center form-group">
-            <SectionTitles firstWordTitle={firstWordTitle} title={title} description={description} />
+            <SectionTitles title={title} description={description} />
             <form onSubmit={handleSubmit} className="text-left">
                 <div className='grid grid-cols-2 grid-flow-rows pb-20 gap-6'>
                     {
