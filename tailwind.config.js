@@ -27,12 +27,6 @@ module.exports = {
         servicesBg: 'rgba(224, 205, 193, 0.16)',
         violet: '#3B225D',
       },
-      fontFamily: {
-        satoshiBlack: ['Satoshi-black', 'sans-serif'],
-        satoshiBold: ['Satoshi-bold', 'sans-serif'],
-        satoshiLight: ['Satoshi-light', 'sans-serif'],
-        satoshiMedium: ['Satoshi-medium', 'sans-serif'],
-      },
       fontSize: {
         h1: '68px',
         h1Sm: '30px',

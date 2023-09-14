@@ -8,7 +8,7 @@
     }
 
     .links {
-        @apply font-satoshiMedium text-nav pr-8;
+        @apply text-nav pr-8;
     }
 
     .btn-primary {
@@ -36,34 +36,18 @@
         @apply text-darkMagenta;
     }
 }
-
-@font-face {
-    font-family: "Satoshi-black";
-    src: url("../src/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf");
-}
-
-@font-face {
-    font-family: "Satoshi-bold";
-    src: url("../src/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf");
-}
-
-@font-face {
-    font-family: "Satoshi-light";
-    src: url("../src/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf");
-}
-
-@font-face {
-    font-family: "Satoshi-medium";
-    src: url("../src/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
-}
-
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito:wght@700&display=swap');*{
     box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
 }
-
+body{
+    font-family: 'Inter', sans-serif;
+}
+h1,h2{
+    font-family: 'Nunito', sans-serif;
+}
 /* Navigation styles to mobile version */
 .navigation-menu {
     display: flex;
