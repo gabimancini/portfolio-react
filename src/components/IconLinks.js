@@ -1,36 +1,32 @@
 // Component
 import Links from "./Links";
-// Icons
-import LinkedinBlack from '../assets/icons/linkedin-black.svg';
-import GithubBlack from '../assets/icons/github-black.svg';
-import YoutubeBlack from '../assets/icons/youtube-black.svg';
-import InstagramBlack from '../assets/icons/instagram-black.svg';
+// Icons 
+import {FaLinkedin} from 'react-icons/fa';
+import {FaInstagramSquare} from 'react-icons/fa';
+import {FaGithubSquare} from 'react-icons/fa';
+import {FaYoutubeSquare} from 'react-icons/fa';
 
-const IconLinks = ({className}) => {
+const IconLinks = () => {
     const socialIcons = [
         {
             id: 10,
-            src: LinkedinBlack,
-            alt: 'Linkedin',
+            reactIcon: <FaLinkedin className="text-3xl ml-4"/>,
             href: 'https://www.linkedin.com/in/gabrielamancini/'
         },
         {
+            id: 14,
+            reactIcon: <FaInstagramSquare className="text-3xl ml-4"/>,
+            href: 'https://www.instagram.com/devmagister/?hl=es-la'
+        },
+        {
             id: 12,
-            src: GithubBlack,
-            alt: 'Github',
+            reactIcon: <FaGithubSquare className="text-3xl ml-4"/>,
             href: 'https://github.com/gabimancini'
         },
         {
             id: 13,
-            src: YoutubeBlack,
-            alt: 'Youtube',
+            reactIcon: <FaYoutubeSquare className="text-3xl ml-4"/>,
             href: 'https://www.youtube.com/@devmagister/'
-        },
-        {
-            id: 14,
-            src: InstagramBlack,
-            alt: 'Instagram',
-            href: 'https://www.instagram.com/devmagister/?hl=es-la'
         },
     ]
 
@@ -39,8 +35,8 @@ const IconLinks = ({className}) => {
             {
                 socialIcons.map((icon) => {
                     return (
-                        <Links key={icon.id} href={icon.href} target='_blank' rel="noreferrer">
-                            <img src={icon.src} alt={icon.alt} className={className} />
+                        <Links key={icon.id} href={icon.href} target='_blank' rel="noreferrer" className="text-3xl">
+                          { icon.reactIcon}
                         </Links>
                     )
 
