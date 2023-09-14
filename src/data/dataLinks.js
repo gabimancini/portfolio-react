@@ -3,25 +3,29 @@ export const internalLinks = [
         id: 1,
         text: 'Home',
         href: '/',
-        download: false
+        download: false,
+        name:'Home'
     },
     {
         id: 2,
         text: 'About',
-        href: '#about',
-        download: false
+        href: '/#about',
+        download: false,
+        name: 'About',
     }
     ,
     {
         id: 3,
         text: 'Services',
-        href: '#services',
-        download: false
+        href: '/#services',
+        download: false,
+        name: 'Services',
     }, 
     {
         id:7,
         text: 'Tutorials',
         href:'/tutorials',
-        download: false
+        download: false,
+        name: 'Tutorials',
     }
 ]
