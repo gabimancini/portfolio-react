@@ -5,9 +5,9 @@ import ProjectsGallery from "../components/ProjectsGallery";
 import TellabProject from "../assets/porjects/tellab.png";
 import PetRoomProject from "../assets/porjects/petRoom.png";
 import UnicornProject from "../assets/porjects/unicorn.png";
-import AngelsProject from "../assets/porjects/lightOfAngels.png";
-import KobbeProject from "../assets/porjects/kobbe.png";
-import DaisyShopProject from "../assets/porjects/daisyShop.png";
+import AleRittaProject from "../assets/porjects/aleRitta.png";
+import HometownProject from "../assets/porjects/hometown.png";
+import DevMagisterProject from "../assets/porjects/devmagister.png";
 
 const Projects = ({title}) => {
     let main = "Projects";
@@ -31,19 +31,19 @@ const Projects = ({title}) => {
             alt: "Unicorn"
         },
         {
-            href: 'https://lightofangels.org/',
-            src: AngelsProject,
-            alt: "Light of Angels"
+            href: 'https://alejandro-ritta.com/',
+            src: AleRittaProject,
+            alt: "Alejandro Ritta diseñador"
         },
         {
-            href: 'https://kobbe.com.ar/',
-            src: KobbeProject,
-            alt: "Kobbe"
+            href: 'https://www.hometowndemolitioncontractors.com/',
+            src: HometownProject,
+            alt: "Hometown Demolition"
         },
         {
-            href: 'https://daisy-store-online.com/',
-            src: DaisyShopProject,
-            alt: "Daisy Shop"
+            href: 'https://devmagister.com/',
+            src: DevMagisterProject,
+            alt: "Devmagister"
         }
     ]
     return (
